@@ -12,11 +12,13 @@ import {
   Briefcase,
   PackageCheck,
   ChevronRight,
-  ShieldAlert
+  ShieldAlert,
+  Smartphone
 } from "lucide-react";
 
 export const NAVIGATION_ITEMS = [
   { id: "dashboard", label: "MIS Dashboard", icon: LayoutDashboard, category: "Core" },
+  { id: "mobile_app", label: "📱 Mobile App Preview", icon: Smartphone, category: "Core" },
   { id: "guards", label: "Guard Master", icon: ShieldCheck, category: "Operations" },
   { id: "compliance", label: "Document Compliance", icon: FileText, category: "Operations", badgeAlert: true },
   { id: "sites", label: "Clients & Sites", icon: Building2, category: "Operations" },

@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import WorkflowsBar from "./components/WorkflowsBar";
 
 import DashboardView from "./components/views/DashboardView";
+import MobileAppPreviewView from "./components/views/MobileAppPreviewView";
 import GuardsView from "./components/views/GuardsView";
 import ComplianceView from "./components/views/ComplianceView";
 import RecruitmentView from "./components/views/RecruitmentView";
@@ -102,6 +103,8 @@ export default function App() {
               onOpenAbsence={() => handleOpenWorkflow('absence')}
             />
           )}
+
+          {activeTab === "mobile_app" && <MobileAppPreviewView />}
 
           {activeTab === "guards" && <GuardsView guards={guards} setGuards={setGuards} onOpenOnboarding={() => handleOpenWorkflow('onboarding')} />}
           {activeTab === "compliance" && <ComplianceView guards={guards} setGuards={setGuards} addNotification={addNotification} />}
